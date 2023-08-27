@@ -1,0 +1,24 @@
+<main role="main" class="container">
+    <label for="alertmessage" style="color: blueviolet;"> Alert Message:</label>
+    <input style="margin-left: 10px;" class="mt-5" contenteditable="true"  (change)="onItemChange($event)"  name="alertmessage" [(ngModel)]="alertmessage" >
+    <br>
+
+    <label for="description" style="color: blueviolet;">Description:</label>
+
+    <input style="margin-left: 27px;" name="description"  [(ngModel)]="description">
+    <br>
+    <label for="priority" style="color: blueviolet;">Priority:</label>
+    <input style="margin-left: 55px;" contenteditable="true" name="priority"  [(ngModel)]="priority">
+    <br>
+    <div style="padding-top: 20px;">
+
+        <button class="btn btn-primary"   (click)="update('update')" style="margin-right: 10px; " disabled>update notes</button>
+        <button class="btn btn-primary" (click)="update('delete')">Delete notes</button>
+        
+    </div>
+
+
+  </main>
+
+
+  
